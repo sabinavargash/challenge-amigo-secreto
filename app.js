@@ -24,3 +24,12 @@ function actualizarAmigos(){
     elementoLista.appendChild(item);
     });
 }
+
+function sortearAmigo(){
+    let numeroSorteado = Math.floor(Math.random() * arregloNombres.length)
+    let amigoSorteado = document.querySelector('.result-list');
+    amigoSorteado.innerHTML = '';
+    let elemento = document.createElement('li');
+    elemento.textContent = arregloNombres[numeroSorteado];
+    amigoSorteado.appendChild(elemento);
+}
