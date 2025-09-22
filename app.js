@@ -9,3 +9,7 @@ function agregarAmigo(){
     limpiarInput();
 
 }
+
+function limpiarInput(){
+    document.querySelector('.input-name').value = '';
+}
